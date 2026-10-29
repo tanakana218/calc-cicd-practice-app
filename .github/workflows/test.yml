@@ -7,7 +7,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@v7
@@ -22,4 +22,3 @@ jobs:
 
       - name: テストを実行
         run: npm test
-
