@@ -26,5 +26,13 @@ describe('calc', () => {
     expect(power(2, 3)).toBe(8);
   });
 
+  test('remainder: 7 % 3 は 1 になる', () => {
+    expect(remainder(7, 3)).toBe(1);
+  });
+
+  test('remainder: 0で割るとエラーになる', () => {
+    expect(() => remainder(7, 0)).toThrow('0で割ることはできません');
+  });
+
 });
 
